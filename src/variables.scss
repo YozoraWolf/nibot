@@ -1,0 +1,81 @@
+// Dark Theme
+$primary-color: #247cce;
+$secondary-color: #1b1b1b;
+$bg-color: #1c2430;
+$txt-color: #fff;
+
+$bg-lines-color: adjust-color($color: $bg-color, $lightness: 6%, $alpha: 1.0);
+
+
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: $bg-color;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+
+    height: calc(100vh - 2px);
+}
+  
+body {
+    margin: 0;
+    display: block;
+    place-items: center;
+}
+
+.char {
+    color: #33c64a;
+}
+
+.copyr {
+    color: #c797ff;
+}
+
+.tag {
+    color: #009be6;
+}
+
+.metad {
+    color: #e0c06c;
+}
+
+.artist {
+    color: #ff8a8b;
+}
+
+// Scrollbar
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    margin-right: 5%;
+
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: adjust-color($color: $bg-lines-color, $lightness: 0%, $alpha: 0.3);
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: adjust-color($color: $bg-lines-color, $lightness: 10%, $alpha: 1.0); 
+    border-radius: 10px;
+
+    :hover {
+        background: adjust-color($color: $bg-lines-color, $lightness: 15%, $alpha: 1.0); 
+
+        width: 25px;
+    }
+
+  }
