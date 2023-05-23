@@ -1,11 +1,13 @@
 <div align="center"> 
 
-# NiBot
+<img src="https://i.imgur.com/ioA4PNX.png"/>
+
+# 🤖NiBot🚀
 
 A simple Facebook Automatic post generator for pages, fetching posts through Danbooru.
 </div>
 
-## Development
+## 💻 Development
 
 ### Install dependencies ⏬
 
@@ -33,7 +35,7 @@ npm run build:linux # uses linux as build target
 ```
 
 Optional configuration options can be found in the [Electron Builder CLI docs](https://www.electron.build/cli.html).
-## Project Structure
+## Project Structure ⌨️
 
 ```bash
 - scripts/ # all the scripts used to build or serve your application, change as you like.
@@ -42,6 +44,6 @@ Optional configuration options can be found in the [Electron Builder CLI docs](h
   - renderer/ # Renderer thread (VueJS application source)
 ```
 
-### Special Thanks to:
+### 🎉 Special Thanks to:
 
 - [Electron Vue Template](https://github.com/Deluze/electron-vue-template) - for the base template.
