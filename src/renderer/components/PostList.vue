@@ -1,8 +1,8 @@
 <template>
   <div class="cont"> 
     <ul class="posts">
-      <div class="post-cont" v-for="post in posts" :key="post.pid">
-        <div class="top-line"></div>
+      <div class="post-cont" v-for="(post, idx) in posts" :key="post.pid">
+        <div class="top-line" v-if="idx !== 0"></div>
         <Post class="post" :post="post"/>
       </div>
     </ul>
@@ -34,17 +34,27 @@ export default {
 
 <style scoped lang="scss">
 .cont {
-  width: 100%;
+
+  position: relative;
 
   margin: 8px;
   margin-top: 32px;
   border: 1px solid $bg-lines-color;
   border-radius: 1%;
 
+  display: flex;
+
+  height: 95%;
+  max-height: 100%;
+
   .posts {
+
+    display: flex;
+    flex-direction: column;
     position: relative;
 
     width: 100%;
+    max-height: 100%;
 
     list-style-type: none;
     padding: 0;
@@ -52,10 +62,8 @@ export default {
     overflow-x: hidden;
 
     scroll-behavior: smooth;
-    height: 80vh;
 
     .post-cont {
-
       .top-line {
         margin-top: 12px;
         margin-bottom: 12px;

@@ -7,8 +7,8 @@ config({ path: join(__dirname, '../../.env') });
 
 function createWindow () {
   const mainWindow = new BrowserWindow({
-    width: 500,
-    height: 400,
+    width: 800,
+    height: 600,
     resizable: true,
     frame: false,
     

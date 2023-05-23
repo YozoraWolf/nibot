@@ -57,7 +57,6 @@ body {
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
-    margin-right: 5%;
 
   }
   
@@ -73,9 +72,7 @@ body {
     border-radius: 10px;
 
     :hover {
-        background: adjust-color($color: $bg-lines-color, $lightness: 15%, $alpha: 1.0); 
-
-        width: 25px;
+        background: adjust-color($color: $bg-lines-color, $lightness: 25%, $alpha: 1.0); 
     }
 
   }

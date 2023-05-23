@@ -29,28 +29,39 @@ html {
 }
 
 .main-cont {
-  position: absolute;
   width: 100%;
-  height: auto;
+  height: 100vh;
+
+  position: relative;
 
   display: flex;
   flex-direction: column;
 }
 
 .content-cont {
+  position: inherit;
+
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: auto;
+  height: 80vh; /* Adjusted to 100vh */
+  max-height: 80vh; /* Adjusted to 100vh */
 
   .search-cont {
+    position: relative;
+
     width: 100%;
+    max-height: 100%;
     margin-left: 12px;
     margin-top: 12px;
+
+    display: flex;
+    flex-direction: column;
   }
 
   .schedule-cont {
     width: 40%;
+    display: flex;
   }
 
 }
