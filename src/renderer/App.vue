@@ -2,13 +2,10 @@
   <div class="main-cont">
     <Title title="Nibot"/>
     <div class="content-cont">
-      <div class="search-cont">
-        <Search/>
-        <PostList/>
-      </div>
-      <div class="schedule-cont">
-        <Schedule/>
-      </div>
+    <div class="sidebar-cont">
+      <Sidebar/>
+    </div>
+    <router-view/>
     </div>
   </div>
   
@@ -16,9 +13,7 @@
 
 <script setup lang="ts">
 import Title from './components/Title.vue'
-import Search from './components/Search.vue'
-import PostList from './components/PostList.vue'
-import Schedule from './components/Schedule.vue'
+import Sidebar from './components/Sidebar.vue'
 </script>
 
 <style lang="scss">
@@ -36,34 +31,27 @@ html {
 
   display: flex;
   flex-direction: column;
+
+  .sidebar-cont {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 100%;
+
+    margin-right: 8px;
+  }
 }
 
 .content-cont {
-  position: inherit;
+  position: relative;
 
   display: flex;
   flex-direction: row;
-  width: 100%;
   height: 80vh; /* Adjusted to 100vh */
   max-height: 80vh; /* Adjusted to 100vh */
 
-  .search-cont {
-    position: relative;
-
-    width: 100%;
-    max-height: 100%;
-    margin-left: 12px;
-    margin-top: 12px;
-
-    display: flex;
-    flex-direction: column;
-  }
-
-  .schedule-cont {
-    width: 40%;
-    display: flex;
-  }
-
+  margin-right: 12px;
 }
 
 
