@@ -1,6 +1,7 @@
 import { app, BrowserWindow, ipcMain, session, shell } from 'electron';
 import { join } from 'path';
 import { config } from 'dotenv';
+import './handlers/BotService.hand';
 
 config({ path: join(__dirname, '../../.env') });
 

@@ -1,9 +1,9 @@
 const ChildProcess = require('child_process');
 const Chalk = require('chalk');
 
-function compile(directory) {
+function compile(directory, outDir) {
   return new Promise((resolve, reject) => {
-    const tscProcess = ChildProcess.exec('tsc', {
+    const tscProcess = ChildProcess.exec(`tsc --outDir "${outDir}"`, {
       cwd: directory,
     });
 

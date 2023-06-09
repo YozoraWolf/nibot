@@ -14,7 +14,8 @@ function buildRenderer() {
 
 function buildMain() {
     const mainPath = Path.join(__dirname, '..', 'src', 'main');
-    return compileTs(mainPath);
+    const outDir = Path.join(__dirname, '..', 'build'); // Specify the desired output directory for the main process code
+    return compileTs(mainPath, outDir);
 }
 
 FileSystem.rmSync(Path.join(__dirname, '..', 'build'), {

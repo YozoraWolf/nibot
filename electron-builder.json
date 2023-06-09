@@ -16,7 +16,7 @@
         "target": ["snap"]
     },
     "files": [
-        "build/main/**/*",
+        "build/**/*",
         {
             "from": "build/renderer",
             "to": "renderer",

@@ -1,7 +1,8 @@
 <template>
     <div class="main-cont">
         <div class="bots-cont">
-            <ul class="bot-list"></ul>
+            <ul class="bot-list">
+            </ul>
             <div class="bot-sett"></div>
         </div>
         <div class="buttons">
@@ -13,6 +14,7 @@
 
 <script>
 export default {
+
 
 }
 </script>
