@@ -8,6 +8,8 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { faUserSecret, faSearch, faCalendar, faRobot, faCog } from '@fortawesome/free-solid-svg-icons';
 library.add(faUserSecret, faSearch, faCalendar, faRobot, faCog);
 
+console.log(window);
+
 // Init Bots API
 const bots = (window as any).botsAPI;
 bots.createBotJSON();
