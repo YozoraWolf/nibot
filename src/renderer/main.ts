@@ -15,6 +15,14 @@ const bots = (window as any).botsAPI;
 bots.createBotJSON();
 const botsl = await bots.readBotJSON();
 
+bots.writeBotJSON({
+    "name": "Okuu2",
+    "sign": "Lol",
+    "img_path": ""
+});
+
+console.log(botsl);
+
 // Set Bots Vuex Store
 store.commit('setBots', botsl);
 

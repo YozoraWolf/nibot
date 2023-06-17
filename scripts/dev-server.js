@@ -30,7 +30,7 @@ async function startElectron() {
     }
 
     try {
-        await compileTs(Path.join(__dirname, '..', 'src', 'main'));
+        await compileTs(Path.join(__dirname, '..', 'src', 'main'), '');
     } catch {
         console.log(Chalk.redBright('Could not start Electron because of the above typescript error(s).'));
         electronProcessLocker = false;

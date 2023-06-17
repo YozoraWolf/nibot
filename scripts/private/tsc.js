@@ -3,7 +3,8 @@ const Chalk = require('chalk');
 
 function compile(directory, outDir) {
   return new Promise((resolve, reject) => {
-    const tscProcess = ChildProcess.exec(`tsc --outDir "${outDir}"`, {
+    let out = outDir !== '' && outDir !== undefined ? ` --outDir "${outDir}"` : '';
+    const tscProcess = ChildProcess.exec(`tsc${out}`, {
       cwd: directory,
     });
 
